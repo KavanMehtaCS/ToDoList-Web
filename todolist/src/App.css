@@ -1,14 +1,25 @@
 .App {
   text-align: left;
+  background-color: #18ce8e;
+  min-width: 100vh;
+  min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-Header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  padding-left: 10px;
+  padding-top: 10px;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-Main {
+  padding-left: 10px;
+  align-items: left;
+  justify-content: left;
+  color: white;
+  font-size: 15px;
 }
