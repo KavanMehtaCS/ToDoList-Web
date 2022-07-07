@@ -7,6 +7,7 @@ export default function App() {
       <p className="App-Main">
         ToDoList
       </p>
+      <p className="App-Menu"> Menu </p>
     </div>
   );
 }

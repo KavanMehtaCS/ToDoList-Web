@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-  background-color: #18ce8e;
+  background-color: #0f7f5b;
   min-width: 100vh;
   min-height: 100vh;
 }
@@ -22,4 +22,23 @@
   justify-content: left;
   color: #FFFFFF;
   font-size: 15px;
+}
+
+.App-Menu {
+  background-color: #FFFFFF;
+  font-size: 15px;
+  color: black;
+  align-items: left;
+  justify-content: left;
+  padding-left: 10px;
+  height: max-content;
+  width: max-content;
+}
+
+.App-NavBar {
+  background-color: #FFFFFF;
+  font-size: 25px;
+  color: black;
+  align-items: center;
+  justify-content: center;
 }
