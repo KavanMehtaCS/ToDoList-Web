@@ -13,13 +13,13 @@
   padding-left: 10px;
   padding-top: 10px;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFFFFF;
 }
 
 .App-Main {
   padding-left: 10px;
   align-items: left;
   justify-content: left;
-  color: white;
+  color: #FFFFFF;
   font-size: 15px;
 }
