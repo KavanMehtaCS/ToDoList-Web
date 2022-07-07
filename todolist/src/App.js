@@ -1,6 +1,6 @@
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
     <header className="App-Header">ToDoList App</header>
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+
