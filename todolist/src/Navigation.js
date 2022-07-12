@@ -3,9 +3,7 @@ import React from "react";
 export default function Navigation(){
 	return(
 		<nav className = "navbar">
-			<div className = "website-name">
-				<h1>Todolist</h1>
-			</div>
+			<a href = "#" className = "site-title">Todolist</a>
 				<ul className = "nav-links">
 					<li className = "link-1"><a href = "#">Features</a></li>
 					<li className = "link-2"><a href = "#">Documentation</a></li>

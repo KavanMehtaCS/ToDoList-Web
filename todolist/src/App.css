@@ -9,9 +9,9 @@ a{
   text-decoration: none;
   color: #FFFFFF;
 }
-h1{
+.site-title{
   font-size: 2em;
-  color: #FFFFFF;
+  font-weight: bold;
 }
 ul{
   display: flex;
@@ -29,6 +29,7 @@ ul li{
   align-items: center;
   border: 2px solid #000000;
   box-shadow: 0px 0px 10px;
+  padding: 15px;
 }
 
 .nav-links > li{
