@@ -3,42 +3,52 @@
   background-color: #0f7f5b;
   min-width: 100vh;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
-
-.App-Header {
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+h1{
+  font-size: 2em;
+  color: #FFFFFF;
+}
+ul{
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: calc(10px + 2vmin);
-  color: #FFFFFF;
 }
 
-.App-Main {
-  padding-left: 10px;
-  align-items: left;
-  justify-content: left;
-  color: #FFFFFF;
-  font-size: 15px;
+ul li{
+  font-size: 1.1em;
 }
 
-.App-Menu {
-  background-color: #FFFFFF;
-  font-size: 15px;
-  color: black;
-  align-items: left;
-  justify-content: left;
-  padding-left: 10px;
-  height: max-content;
-  width: max-content;
-}
-
-.App-NavBar {
-  background-color: #FFFFFF;
-  font-size: 25px;
-  color: black;
+.navbar{
+  display: flex;
+  max-height: 120px;
+  max-width: 100vw;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  border: 2px solid #000000;
+  box-shadow: 0px 0px 10px;
+}
+
+.nav-links > li{
+  list-style-type: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+.login-signup{
+  display: flex;
+  gap: 10px;
+}
+
+.login-signup > button{
+  border-radius: 7px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #FF9BFF;
 }

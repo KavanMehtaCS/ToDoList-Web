@@ -1,28 +1,21 @@
 import React from "react";
-import { Nav, NavLink, NavMenu }
-	from "./NavbarElements";
 
-const Navbar = () => {
-return (
-	<>
-	<Nav>
-		<NavMenu>
-		<NavLink to="/App" activeStyle>
-			Today
-		</NavLink>
-		<NavLink to="/Customization" activeStyle>
-			Customization
-		</NavLink>
-		<NavLink to="/Settings" activeStyle>
-			Settings
-		</NavLink>
-		<NavLink to="/Accomplishments" activeStyle>
-			Accomplishments
-		</NavLink>
-		</NavMenu>
-	</Nav>
-	</>
-);
-};
+export default function Navigation(){
+	return(
+		<nav className = "navbar">
+			<div className = "website-name">
+				<h1>Todolist</h1>
+			</div>
+				<ul className = "nav-links">
+					<li className = "link-1"><a href = "#">Features</a></li>
+					<li className = "link-2"><a href = "#">Documentation</a></li>
+					<li className = "link-3"><a href = "#">About us</a></li>
+				</ul>
+			<div className = "login-signup">
+				<button>Sign up</button>
+				<button>Log in</button>
+			</div>
+		</nav>
+	)
+}
 
-export default Navbar;
