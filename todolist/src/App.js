@@ -13,7 +13,7 @@ export default function App() {
       <Navigation />
       <div className = "sample-text">
         <Routes>
-          <Route path = '/' element = {<Home />} />
+          <Route path = '/home' element = {<Home />} />
           <Route path = '/features' element = {<Features />} />
           <Route path = '/documentation' element = {<Documentation />} />
           <Route path = '/aboutus' element = {<AboutUs />} />
