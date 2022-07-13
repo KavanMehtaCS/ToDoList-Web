@@ -2,6 +2,6 @@ import React from "react";
 
 export default function Accomplishments(){
     return(
-        <div/>
+        <h1>Accomplishments page</h1>
     )
 }
