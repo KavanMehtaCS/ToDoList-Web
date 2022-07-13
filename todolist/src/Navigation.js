@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navigation(){
 	return(
 		<nav className = "navbar">
-			<a href = "#" className = "site-title">Todolist</a>
+			<Link to = '/' className = "site-title">Todolist</Link>
 				<ul className = "nav-links">
-					<li className = "link-1"><a href = "#">Features</a></li>
-					<li className = "link-2"><a href = "#">Documentation</a></li>
-				<li className = "link-3"><a href = "#">About us</a></li>
+					<li className = "link-1"><Link to = '/features'>Features</Link></li>
+					<li className = "link-2"><Link to = '/documentation'>Documentation</Link></li>
+				<li className = "link-3"><Link to = '/aboutus'>About us</Link></li>
 				</ul>
 			<div className = "login-signup">
 				<button>Sign up</button>

@@ -7,7 +7,7 @@
 }
 a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 .site-title{
   font-size: 2em;
@@ -15,11 +15,17 @@ a{
 }
 ul{
   display: flex;
+  align-items: center;
 }
 
 ul li{
   font-size: 1.1em;
+  padding: 5px;
 }
+
+ul li:hover{
+  background: rgb(255, 239, 0);
+  }
 
 .navbar{
   display: flex;
@@ -52,4 +58,9 @@ ul li{
 
 button:hover{
   background-color: #FF9BFF;
+}
+
+.sample-text{
+  text-align: center;
+  margin: 9px;
 }
