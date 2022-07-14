@@ -4,6 +4,7 @@ import {useState} from 'react'
 
 export default function Event() {
     const [buttonPopup, setButtonPopup] = useState(false);
+    return (
     <div>
         <h1> Events </h1>
         <button onClick={() => setButtonPopup(true)}> Add Event </button>
@@ -11,4 +12,5 @@ export default function Event() {
             <h3> My Popup </h3>
         </Popup>
     </div>
+    )
 }
