@@ -10,14 +10,22 @@ export default function Home(){
         <h1> Events </h1>
         <button onClick={() => setButtonPopup(true)}> Add Event </button>
         <Popup trigger = {buttonPopup} setTrigger = {setButtonPopup}>
-            <h3> 
+            {/* <h3> 
                 Name <br />
                 Deadline <br />
                 Start/End Time <br />
                 Priority <br />
                 Repeat (Optional) <br />
                 Adding Steps for a Task
-            </h3>
+            </h3> */}
+            <form>
+                <label>
+                    Name of Event: <br />
+                    <input type = "text" name="name" />
+                </label>
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
         </Popup>
     </div>
     )
