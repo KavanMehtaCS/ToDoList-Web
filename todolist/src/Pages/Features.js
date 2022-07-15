@@ -1,11 +1,17 @@
 import React from "react"
 
-export default function Features(){
+export default function Features(props){
     return(
-        <>
-            <h1>Staying on top of all your tasks</h1>
-            <p>Todolist gives you the ability to personalize your tasks and keep a track of deadlines 
-                so that you can maximize your productivity</p>
-        </>
+        <div className = "feature-cards">
+        <div className = "feature-card">
+                <figure className = "feature-card-image">
+                    <img className = "main-img" src = {props.image}  alt = "Feature-image"/>
+                </figure>
+                <div className = "feature-card-text">
+                    <h1>{props.title}</h1>
+                    <p>{props.byLine}</p>
+                </div>
+        </div>
+        </div>
     )
 }
