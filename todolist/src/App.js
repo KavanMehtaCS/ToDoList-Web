@@ -39,7 +39,7 @@ export default function App() {
   return (
     <div className="App">
       <Navigation />
-      <div className = "sample-text">
+      <div className = "sections">
         <Routes>
           <Route path = '/home' element = {<Home />} />
           <Route path = '/accomplishments' element = {<Accomplishments />} />
