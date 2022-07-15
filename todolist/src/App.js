@@ -8,6 +8,7 @@ import Accomplishments from "./Pages/Accomplishments"
 import Documentation from "./Pages/Documentation"
 import AboutUs from "./Pages/AboutUs"
 import Customization from "./Pages/Customization"
+import FeaturesData from './FeaturesData'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -31,15 +32,19 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 export default function App() {
+
+  const featureCards = FeaturesData.map(feature => {
+    return <Features key = {feature.id} {...feature}/>
+  })
   return (
     <div className="App">
       <Navigation />
-      <div className = "sample-text">
+      <div className = "sections">
         <Routes>
           <Route path = '/home' element = {<Home />} />
           <Route path = '/accomplishments' element = {<Accomplishments />} />
           <Route path = '/customization' element = {<Customization />} />
-          <Route path = '/features' element = {<Features />} />
+          <Route path = '/features' element = {featureCards} />
           <Route path = '/documentation' element = {<Documentation />} />
           <Route path = '/aboutus' element = {<AboutUs />} />
         </Routes>
