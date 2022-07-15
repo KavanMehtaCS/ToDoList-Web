@@ -47,6 +47,19 @@ ul li{
   font-weight: bold;
 }
 
+.nav-link::after{
+  content: ' ';
+  display: block;
+  height: 4px;
+  width: 0;
+  background-color: rgba(0,0,255);
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+}
+
 .login-signup{
   display: flex;
   gap: 10px;
@@ -66,24 +79,19 @@ button:hover{
   background-color: #062a78;
 }
 
-.sections{
-  text-align: center;
-  margin: 15px;
-}
-
  .feature-card{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 40px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
-  max-width: 650px;
-  width: 100%;
+  gap: 25px;
 }
 
 .feature-card-text{
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .main-img{
