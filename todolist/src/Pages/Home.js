@@ -5,7 +5,7 @@ import {useState} from 'react'
 export default function Home(){
     const [buttonPopup, setButtonPopup] = useState(false);
     return (
-    <div>
+    <div className = "home">
         <h1>Home Page</h1>
         <h1> Events </h1>
         <button onClick={() => setButtonPopup(true)}> Add Event </button>
@@ -18,13 +18,10 @@ export default function Home(){
                 Repeat (Optional) <br />
                 Adding Steps for a Task
             </h3> */}
-            <form>
-                <label>
-                    Name of Event: <br />
-                    <input type = "text" name="name" />
-                </label>
+            <form className = "event-log-form">
+                <input className = "event-field" type = "text" placeholder = "Name of Event" />
                 <br />
-                <input type="submit" value="Submit" />
+                <input className = "submit-field" type="submit" value="Submit" />
             </form>
         </Popup>
     </div>

@@ -98,3 +98,22 @@ button:hover{
   max-width: 350px;
   width: 100%;
 }
+
+.home{
+  text-align: center;
+}
+
+.event-log-form{
+  display: grid;
+  grid-template: 20px 20px / 1fr;
+  align-items: center;
+}
+
+.event-field{
+  margin-top: 35px;
+}
+
+.submit-field{
+  margin-top: 20px;
+  cursor: pointer;
+}
