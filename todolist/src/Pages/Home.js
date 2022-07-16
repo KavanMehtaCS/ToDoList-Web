@@ -8,7 +8,7 @@ export default function Home(){
     <div className = "home">
         <h1>Home Page</h1>
         <h1> Events </h1>
-        <button onClick={() => setButtonPopup(true)}> Add Event </button>
+        <button className = "add-btn" onClick={() => setButtonPopup(true)}> Add Event </button>
         <Popup trigger = {buttonPopup} setTrigger = {setButtonPopup}>
             {/* <h3> 
                 Name <br />

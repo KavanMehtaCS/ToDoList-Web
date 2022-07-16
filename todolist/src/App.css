@@ -77,6 +77,12 @@ ul li{
 
 button:hover{
   background-color: #062a78;
+  color: #fff;
+}
+
+.add-btn{
+  border-radius: 7px;
+  padding: 10px;
 }
 
  .feature-card{
